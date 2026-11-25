@@ -1,0 +1,20 @@
+# Secrets -- never commit a real key
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Run artefacts (regenerated every run)
+logs/
+reports/
+!reports/sample_incident_report.md
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
