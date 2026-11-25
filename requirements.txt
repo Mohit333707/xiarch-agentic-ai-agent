@@ -1,0 +1,5 @@
+# Sentinel -- only two dependencies, on purpose.
+# No LangChain / LangGraph: the ReAct loop is ~150 lines of plain Python
+# in sentinel/agent.py, so there is nothing heavy to install or break.
+requests>=2.31
+python-dotenv>=1.0
