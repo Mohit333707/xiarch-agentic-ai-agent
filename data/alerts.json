@@ -1,0 +1,92 @@
+[
+  {
+    "description": "142 failed SSH login attempts for user root on web-01 in 10 minutes from 203.0.113.45, followed by one successful login.",
+    "details": {
+      "failed_attempts": 142,
+      "successful_login": true,
+      "window_minutes": 10
+    },
+    "host": "web-01",
+    "id": "ALT-1001",
+    "severity": "high",
+    "source_ip": "203.0.113.45",
+    "timestamp": "2026-11-25T02:14:07Z",
+    "type": "SSH brute-force",
+    "user": "root"
+  },
+  {
+    "description": "Email claiming to be an invoice from 'accounts-update@example-billing.com' with a link to a credential-harvesting page. Reported by the recipient; link clicked once before the report.",
+    "details": {
+      "link_clicked": true,
+      "sender": "accounts-update@example-billing.com",
+      "subject": "Overdue invoice #INV-8841 - action required"
+    },
+    "host": "mail-gateway",
+    "id": "ALT-1002",
+    "severity": "high",
+    "source_ip": null,
+    "timestamp": "2026-11-25T03:02:41Z",
+    "type": "Phishing email",
+    "user": "priya.sharma@example.com"
+  },
+  {
+    "description": "User rahul.verma logged in via VPN from a country he has never logged in from before, at 04:47 local time, 20 minutes after a login from his usual city.",
+    "details": {
+      "new_country": "Unknown - to be checked with IP lookup",
+      "previous_country": "India",
+      "time_gap_minutes": 20
+    },
+    "host": "vpn-gateway",
+    "id": "ALT-1003",
+    "severity": "medium",
+    "source_ip": "198.51.100.23",
+    "timestamp": "2026-11-25T04:47:19Z",
+    "type": "Suspicious login from new country",
+    "user": "rahul.verma"
+  },
+  {
+    "description": "Endpoint agent flagged file payroll-update.exe on workstation-14. Its SHA-256 hash was seen in a recent malware report. The file was quarantined automatically.",
+    "details": {
+      "filename": "payroll-update.exe",
+      "quarantined": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "host": "workstation-14",
+    "id": "ALT-1004",
+    "severity": "critical",
+    "source_ip": null,
+    "timestamp": "2026-11-25T06:11:55Z",
+    "type": "Malware hash detected",
+    "user": "anita.desai"
+  },
+  {
+    "description": "External host 203.0.113.78 probed 48 ports on the edge firewall in 3 minutes, including 22, 80, 443, 3306 and 3389. No port was open to it.",
+    "details": {
+      "ports_open": 0,
+      "ports_probed": 48,
+      "window_minutes": 3
+    },
+    "host": "firewall-edge",
+    "id": "ALT-1005",
+    "severity": "medium",
+    "source_ip": "203.0.113.78",
+    "timestamp": "2026-11-25T07:33:02Z",
+    "type": "Port scan",
+    "user": null
+  },
+  {
+    "description": "User karan.mehta failed MFA push approval 3 times in a row, then logged in successfully on the 4th attempt from his usual device and city.",
+    "details": {
+      "failed_mfa_attempts": 3,
+      "then_successful": true,
+      "usual_device": true
+    },
+    "host": "sso-portal",
+    "id": "ALT-1006",
+    "severity": "low",
+    "source_ip": "198.51.100.91",
+    "timestamp": "2026-11-25T08:05:26Z",
+    "type": "Failed MFA",
+    "user": "karan.mehta"
+  }
+]
