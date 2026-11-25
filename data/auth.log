@@ -1,0 +1,28 @@
+Nov 25 02:04:11 web-01 sshd[2141]: Failed password for root from 203.0.113.45 port 51234 ssh2
+Nov 25 02:04:19 web-01 sshd[2141]: Failed password for root from 203.0.113.45 port 51234 ssh2
+Nov 25 02:05:02 web-01 sshd[2141]: Failed password for root from 203.0.113.45 port 51234 ssh2
+Nov 25 02:06:44 web-01 sshd[2141]: Failed password for root from 203.0.113.45 port 51234 ssh2
+Nov 25 02:09:31 web-01 sshd[2141]: Failed password for root from 203.0.113.45 port 51234 ssh2
+Nov 25 02:11:08 web-01 sshd[2141]: Failed password for root from 203.0.113.45 port 51234 ssh2
+Nov 25 02:14:07 web-01 sshd[2141]: Accepted password for root from 203.0.113.45 port 51234 ssh2
+Nov 25 02:14:09 web-01 sshd[2141]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Nov 25 03:02:41 mail-gateway postfix/smtpd[8812]: connect from unknown[198.51.100.57]
+Nov 25 03:02:41 mail-gateway postfix/smtpd[8812]: 4F2K9Q: client=unknown[198.51.100.57], from=<accounts-update@example-billing.com>, to=<priya.sharma@example.com>
+Nov 25 04:27:03 vpn-gateway vpn[3011]: user rahul.verma logged in from 198.51.100.10 (India, usual city)
+Nov 25 04:47:19 vpn-gateway vpn[3011]: user rahul.verma logged in from 198.51.100.23 (new country, first seen)
+Nov 25 04:47:20 vpn-gateway vpn[3011]: WARNING: impossible-travel check: rahul.verma, 2 logins 20 min apart from different countries
+Nov 25 06:11:55 workstation-14 endpoint[5520]: QUARANTINED payroll-update.exe sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 user=anita.desai
+Nov 25 06:12:01 workstation-14 endpoint[5520]: file payroll-update.exe blocked from execution (quarantine active)
+Nov 25 07:33:02 firewall-edge kernel: [UFW BLOCK] SRC=203.0.113.78 DST=10.0.0.1 PROTO=TCP DPT=22
+Nov 25 07:33:04 firewall-edge kernel: [UFW BLOCK] SRC=203.0.113.78 DST=10.0.0.1 PROTO=TCP DPT=80
+Nov 25 07:33:09 firewall-edge kernel: [UFW BLOCK] SRC=203.0.113.78 DST=10.0.0.1 PROTO=TCP DPT=443
+Nov 25 07:33:21 firewall-edge kernel: [UFW BLOCK] SRC=203.0.113.78 DST=10.0.0.1 PROTO=TCP DPT=3306
+Nov 25 07:33:40 firewall-edge kernel: [UFW BLOCK] SRC=203.0.113.78 DST=10.0.0.1 PROTO=TCP DPT=3389
+Nov 25 07:34:12 firewall-edge kernel: [UFW BLOCK] SRC=203.0.113.78 DST=10.0.0.1 PROTO=TCP DPT=8080
+Nov 25 08:02:11 sso-portal sso[7710]: MFA push denied for karan.mehta from 198.51.100.91 (attempt 1)
+Nov 25 08:03:44 sso-portal sso[7710]: MFA push denied for karan.mehta from 198.51.100.91 (attempt 2)
+Nov 25 08:04:52 sso-portal sso[7710]: MFA push denied for karan.mehta from 198.51.100.91 (attempt 3)
+Nov 25 08:05:26 sso-portal sso[7710]: MFA push approved for karan.mehta from 198.51.100.91 (usual device, usual city)
+Nov 25 08:05:27 sso-portal sso[7710]: user karan.mehta logged in successfully
+Nov 25 09:15:00 web-01 sshd[2204]: Accepted publickey for deploy from 10.0.0.5 port 40210 ssh2
+Nov 25 09:15:01 web-01 sshd[2204]: pam_unix(sshd:session): session opened for user deploy by (uid=1001)
